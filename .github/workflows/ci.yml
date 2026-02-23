@@ -46,7 +46,7 @@ jobs:
     - name: Import Database
       run: |
         sudo apt-get install mysql-client
-        mysql -h 127.0.0.1 -uroot -proot uas_db < damncrud.sql
+        mysql -h 127.0.0.1 -uroot -proot  damncrud < web/db/damncrud.sql
 
     - name: Start PHP Server
       run: |
