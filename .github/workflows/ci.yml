@@ -39,6 +39,7 @@ jobs:
     - name: Install Python Dependencies
       run: |
         pip install -r requirements.txt
+        pip install pytest pytest-xdist
 
     - name: Install Chrome
       uses: browser-actions/setup-chrome@v1
